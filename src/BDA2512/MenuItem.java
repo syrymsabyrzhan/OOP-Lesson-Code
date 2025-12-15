@@ -1,4 +1,4 @@
-package temp;
+package BDA2512;
 
 public class MenuItem {
     private String name;
