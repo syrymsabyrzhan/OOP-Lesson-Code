@@ -26,6 +26,16 @@ public class Employee {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", salary=" + salary +
+                ", department='" + department + '\'' +
+                '}';
+    }
+
     public String getName() {
         return name;
     }
