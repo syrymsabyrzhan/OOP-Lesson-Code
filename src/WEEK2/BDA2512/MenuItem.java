@@ -1,31 +1,29 @@
-package WEEK1.IT2502;
+package WEEK2.BDA2512;
 
 public class MenuItem {
     private String name;
-    private String category;
     private double price;
+    private String category;
     private boolean isAvailable;
 
-    public MenuItem(String name, String category, double price, boolean isAvailable) {
+    public MenuItem(String name, double price, String category, boolean isAvailable) {
         this.name = name;
-        this.category = category;
         this.price = price;
+        this.category = category;
         this.isAvailable = isAvailable;
     }
-
-    public MenuItem(String name, double price) {
-        this.name = name;
-        this.price = price;
-    }
-
     public MenuItem() {}
 
-    public String getCategory() {
-        return category;
+    public double totalPrice(int quantity) {
+        return price * quantity;
     }
 
-    public void setCategory(String category) {
-        this.category = category;
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public String getName() {
@@ -36,12 +34,12 @@ public class MenuItem {
         this.name = name;
     }
 
-    public double getPrice() {
-        return price;
+    public String getCategory() {
+        return category;
     }
 
-    public void setPrice(double price) {
-        this.price = price;
+    public void setCategory(String category) {
+        this.category = category;
     }
 
     public boolean isAvailable() {
@@ -56,8 +54,8 @@ public class MenuItem {
     public String toString() {
         return "MenuItem{" +
                 "name='" + name + '\'' +
-                ", category='" + category + '\'' +
                 ", price=" + price +
+                ", category='" + category + '\'' +
                 ", isAvailable=" + isAvailable +
                 '}';
     }

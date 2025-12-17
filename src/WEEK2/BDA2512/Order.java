@@ -1,4 +1,4 @@
-package WEEK1.BDA2512;
+package WEEK2.BDA2512;
 
 import java.util.ArrayList;
 
