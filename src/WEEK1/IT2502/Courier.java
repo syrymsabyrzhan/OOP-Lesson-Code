@@ -1,4 +1,4 @@
-package IT2502;
+package WEEK1.IT2502;
 
 public class Courier {
     private String name;

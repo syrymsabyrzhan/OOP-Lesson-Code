@@ -1,4 +1,4 @@
-package BDA2512;
+package WEEK1.BDA2512;
 
 public class MenuItem {
     private String name;
